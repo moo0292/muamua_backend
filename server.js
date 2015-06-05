@@ -103,6 +103,12 @@ router.route('/get_all/:longtitude/:latitude')
         });
     });
 
+
+app.get('/', function(request, response) {
+  response.send('Hello World!');
+});
+
+
 router.route('/post_message')
     .post(function(req, res) {
         var message = new Message();
